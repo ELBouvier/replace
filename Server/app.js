@@ -16,7 +16,7 @@ app.use(require('./middleware/headers'));
 app.use('/user', user);
 app.use('/color', color);
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
     console.log('Hey man!!!')
 
 });
