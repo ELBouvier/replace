@@ -17,8 +17,6 @@ const Auth = (props) => {
     setPassword('');
     };
 
-    sessionStorage.setItem('currentName', firstName)
-
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -32,6 +30,7 @@ const Auth = (props) => {
             }
         }        
 
+        sessionStorage.setItem('currentName', firstName)
 
         fetch(url, {
             method: 'POST',
@@ -83,3 +82,7 @@ const Auth = (props) => {
 }
 
 export default Auth;
+
+//CREATE A GET REQUEST THAT FIRES WHEN A USER IS LOGGED IN WHICH UPDATES THE 'HAS MADE IT CLEAR' SECTION SO THAT IT SHOWS PREVIOUS USER'S NAME AND COLOR CHOSEN
+
+//MAKE VIDEO BACKGROUND PLAY WITH A FILTER OVER IT THE COLOR THAT IS SELECTED

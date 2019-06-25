@@ -10,10 +10,10 @@ let BigButton= (props) => {
         
           let x = sessionStorage.getItem('selectedName')
           let y = sessionStorage.getItem('selectedValue')
-          setSetter('test');
+          setSetter('');
         
           fetch('http://localhost:3000/color/colorplace', {
-              method: 'POST',
+              method: 'put',
               body:JSON.stringify({
                 color: {
                 colorName: x,
