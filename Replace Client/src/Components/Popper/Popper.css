@@ -1,0 +1,21 @@
+h1 {
+    color: aqua;
+}
+
+.PopperContainer {
+    position:absolute !important;
+    left:0 !important;
+    top:0 !important;
+    font-size: .75em !important;
+}
+
+#PopperContent {
+    font-size: .25 rem !important;
+}
+
+.Logout {
+    position:absolute !important;
+    right:0 !important;
+    top:0 !important;
+    font-size: .75rem !important;    
+}
